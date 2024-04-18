@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "35a0e978bc159468f6baac9b5474363c"
+name = "express-app-sandbox"
+handle = "express-app-sandbox"
+application_url = "https://afford-ate-foo-facial.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "justinestradadev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://afford-ate-foo-facial.trycloudflare.com/auth/callback",
+  "https://afford-ate-foo-facial.trycloudflare.com/auth/shopify/callback",
+  "https://afford-ate-foo-facial.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
